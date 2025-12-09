@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Admin</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<button class="menu-btn" onclick="toggleNav()">☰</button>
+
+<div id="sidebar" class="sidebar">
+  <h2>Menu Admin</h2>
+  <a href="rekap-absen.html">Rekap Absen</a>
+  <a href="rekap-tugas.html">Rekap Tugas</a>
+  <button onclick="generateROM()">Buat Kode ROM</button>
+  <p id="romCode"></p>
+  <a href="profil-admin.html">Profil</a>
+  <a href="index.html" onclick="logout()">Logout</a>
+</div>
+
+<div class="main">
+  <h1>Dashboard Admin</h1>
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
