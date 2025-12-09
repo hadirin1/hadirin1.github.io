@@ -33,3 +33,17 @@ function loadRekap(){
     `;
   });
 }
+function hapusRekapAbsen(){
+
+  let user = JSON.parse(localStorage.getItem("loginUser"));
+  if(!user || user.role !== "admin"){
+    alert("Hanya admin yang bisa menghapus data!");
+    return;
+  }
+  let konfirmasi = confirm("Yakin mau hapus semua data absen?");
+  if(!konfirmasi) return;
+
+  localStorage.removeItem("absenData");
+  alert("Semua data absen berhasil dihapus ✅");
+  loadRekap();
+}
