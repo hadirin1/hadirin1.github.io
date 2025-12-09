@@ -1,0 +1,12 @@
+body{font-family:Arial;background:#e5e7eb}
+.box{
+  width:100%;max-width:350px;margin:80px auto;
+  background:white;padding:20px;border-radius:10px;
+  box-shadow:0 10px 20px rgba(0,0,0,.1)
+}
+h2{text-align:center}
+input,button{
+  width:100%;padding:12px;margin-top:10px;
+  border:1px solid #ccc;border-radius:6px
+}
+button{background:#2563eb;color:white;border:none}
