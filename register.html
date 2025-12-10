@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Daftar Akun</title>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+<p1>Diharapkan Menggunakan Nama Asli</p1>
+<div class="container">
+
+  <h2>Daftar Akun</h2>
+
+  <!-- Pilihan Role -->
+  <div class="role-box">
+
+    <div class="role-item" onclick="setRole('user')">
+      <p>User</p>
+      <img src="images/user.png">
+    </div>
+
+    <div class="role-item" onclick="setRole('admin')">
+      <p>Admin</p>
+      <img src="images/admin.png">
+    </div>
+
+  </div>
+
+  <input type="hidden" id="role" value="">
+
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+
+  <button onclick="daftar()">Daftar</button>
+
+  <p>Sudah punya akun? <a href="index.html">Login</a></p>
+
+</div>
+
+<script src="js/register.js"></script>
+</body>
+</html>
